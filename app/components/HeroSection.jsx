@@ -6,6 +6,10 @@ import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 
 const HeroSection = () => {
+
+    const handleClick = () => {
+        window.open('https://drive.google.com/file/d/1msteVSXKFzqczMMGHI_Ub5CeCUz2O6Dx/view?usp=sharing', '_blank')
+    }
     
   return (
     <section className='lg:mb-20 lg:mt-20'>
@@ -40,7 +44,9 @@ const HeroSection = () => {
                     <button className="px-10 py-4 w-full sm:w-fit rounded-lg bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
                         Hire Me
                     </button>
-                    <button className="px-1 py-1 w-full sm:w-fit rounded-lg bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white">
+                    <button className="px-1 py-1 w-full sm:w-fit rounded-lg bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white"
+                        onClick={handleClick}
+                    >
                         <span className="block bg-[#121212] hover:bg-slate-800 rounded-lg px-5 py-3">
                         Download CV
                         </span>
